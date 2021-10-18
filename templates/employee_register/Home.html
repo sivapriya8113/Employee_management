@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employe Management </title>
+    {% load static %}
+
+
+</head>
+
+<body>
+<!--- <div style="background-image: url({% static 'images/cover.jpg' %});">
+
+         <img src="{% static '/backgroundimage/gh.png' %}" alt="home" /> -->
+<img src="{% static '/backgroundimage/ABC.png' %}" height="50px" width="50px" alt=”site’s logo”>
+ <div style="height:100vh; background-repeat: no-repeat;background-size: cover;  background-image: url({% static '/backgroundimage/gh.png' %});">
+
+<h1>ABC Company</h1>
+     <a href="{% url 'employee_list' %}" class="btn btn-secondary btn-block btn-lg">ADMIN</a>
+     <div class="col-md-4">
+            <br><a href="{% url 'login' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-stream"></i> Employee Login
+            </a>
+        </div>
+
+
+
+</div>
+</body>
+</html>
+
+
