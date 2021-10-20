@@ -8,26 +8,21 @@
     <title>Employe Management </title>
     {% load static %}
 
-
 </head>
-
 <body>
 <!--- <div style="background-image: url({% static 'images/cover.jpg' %});">
+     <img src="{% static '/backgroundimage/gh.png' %}" alt="home" /> -->
 
-         <img src="{% static '/backgroundimage/gh.png' %}" alt="home" /> -->
-<img src="{% static '/backgroundimage/ABC.png' %}" height="50px" width="50px" alt=”site’s logo”>
- <div style="height:100vh; background-repeat: no-repeat;background-size: cover;  background-image: url({% static '/backgroundimage/gh.png' %});">
-
-<h1>ABC Company</h1>
-     <a href="{% url 'employee_list' %}" class="btn btn-secondary btn-block btn-lg">ADMIN</a>
-     <div class="col-md-4">
-            <br><a href="{% url 'login' %}" class="btn btn-secondary btn-block btn-lg">
-                <i class="fas fa-stream"></i> Employee Login
-            </a>
-        </div>
-
-
-
+     <div style="height:100vh; background-repeat: no-repeat;background-size: cover;  background-image: url({% static '/backgroundimage/seo-company-in-delhi.jpg' %});">
+         <center style="background:rgba(0,0,0,0.5);padding : 50px;"><img src="{% static '/backgroundimage/ABC.png' %}" height="50px" width="50px" alt=”site’s logo”>
+             <h1 style="color:white;   ">ABC COMPANY</h1>
+             <br><br> <a  href="{% url 'employee_list' %}" class="btn btn-secondary btn-block btn-lg"><h3 style="color:white ">ADMIN</h3></a>
+               <div class="col-md-4">
+                  <a href="{% url 'login' %}" class="btn btn-secondary btn-block btn-lg">
+                    <i class="fas fa-stream"></i> <h3 style="color:white ">EMPLOYEE LOGIN</h3></a>
+               </div>
+         </center>
+     </div>
 </div>
 </body>
 </html>
