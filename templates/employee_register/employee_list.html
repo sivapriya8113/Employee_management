@@ -22,8 +22,8 @@
         {% for employee in employee_list %}
             <tr>
 
-               <!--- <td><img src= <a href="{% url 'employee.EMPimage'employee.id   %}" height="10px" width="10px" ></a></td>-->
-                <td>{{employee.EMPimage}}</td>
+
+                <td><img src="{{employee.image_url}}"></td>
                 <td>{{employee.fullname}}</td>
                 <td>{{employee.mobile}}</td>
                 <td>{{employee.emp_code}}</td>
