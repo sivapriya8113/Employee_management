@@ -1,5 +1,4 @@
 {% extends "employee_register/base.html" %}
-
 {% block content %}
 <table class="table table-borderless">
     <thead class="border-bottom font-weight-bold">
@@ -23,7 +22,7 @@
             <tr>
 
 
-                <td><img src="{{employee.image_url}}"></td>
+                <td><img src="{{employee.image_url.url}}"></td>
                 <td>{{employee.fullname}}</td>
                 <td>{{employee.mobile}}</td>
                 <td>{{employee.emp_code}}</td>
