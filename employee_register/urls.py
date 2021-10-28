@@ -10,5 +10,6 @@ urlpatterns = [
     path('<int:id>/', views.employee_form,name='employee_update'),
     path('delete/<int:id>/',views.employee_delete,name='employee_delete'),
     path('',views.employee_list,name='employee_list'),
+    path('second_task',views.num_to_word,name='num_to_word'),
 
 ]
