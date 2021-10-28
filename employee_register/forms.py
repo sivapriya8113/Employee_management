@@ -26,6 +26,9 @@ class EmployeeForm(forms.ModelForm):
         #self.fields['Department'].empty_label = "Select"
         self.fields['emp_code'].required = False
 
+class NumWordForm(forms.Form):
+    Number = forms.IntegerField()
+
 
 
 
